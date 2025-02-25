@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Auth0 Example</title>
+</head>
+
+<body>
+    {% if session %}
+    <h1>Welcome {{ session.name }}!</h1>
+    <h1>Your AC alias is "{{ session.nickname }}"</h1>
+    <p><a href="/logout">Logout</a></p>
+    <h3>User Data (JSON):</h3>
+    <pre>{{ user_json }}</pre>
+    {% else %}
+    <h1>Welcome Guest</h1>
+    <p><a href="/login">Login</a></p>
+    {% endif %}
+</body>
+
+</html>

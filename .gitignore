@@ -1,0 +1,55 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyre
+.env/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE Specific
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Development
+*.log
+*.sqlite
+*.db
+*.dump
+
+# Local Development
+instance/
+
+# Auth0 Configuration
+auth0_config.json
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+
+# Temporary Files
+*.swp
+*.swo
+*~
